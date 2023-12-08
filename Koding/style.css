@@ -1,0 +1,63 @@
+/* Definerer stil for spillbrettet */
+.board {
+    display: grid; /* Bruker grid layout */
+    grid-template-columns: repeat(3, 125px); /* Definerer tre kolonner med bredde 125 piksler hver */
+    grid-gap: 5px; /* Setter avstand mellom rutene til 5 piksler */
+    width: 320px; /* Total bredde for spillbrettet */
+    margin: 50px auto; /* Setter 50 piksler margin øverst og nederst, og auto for å sentrere horisontalt */
+}
+
+/* Stil for hver celle på spillbrettet */
+.cell {
+    width: 125px; /* Bredde på hver celle */
+    height: 125px; /* Høyde på hver celle */
+    border: 1px solid #000; /* En piksel tykk, svart kantlinje rundt hver celle */
+    display: flex; /* Bruker flexbox for innholdet i cellen */
+    justify-content: center; /* Sentrerer innholdet horisontalt */
+    font-size: 35px; /* Sentrerer innholdet vertikalt */
+    align-items: center; /* Størrelse på skrift i cellen */
+    cursor: pointer; /* Viser pekeren som et håndsymbolet når du holder over cellen */
+}
+
+/* Generelle stiler for hele dokumentet */
+.body {
+    background-color: cyan;
+    font-size: 16px;
+}
+
+/* Generell stil for skjemaer */
+form {
+    width: auto;
+    height: auto;
+}
+
+/* Stil for lenker */
+a {
+    text-decoration: none;
+}
+
+/* Stil for høyrejustering */
+.right {
+    text-align: right; /* Justerer teksten til høyre */
+    align-items: right; /* Justerer elementets innhold til høyre */
+    align-self: right; /* Justerer elementets selvjustering til høyre */
+}
+
+/* Stil for høyrejustering 2 */
+.right2 {
+    margin-right: 5px; /* Margin til høyre på 5 piksler */
+    right: 5px; /* Plasserer elementet 5 piksler fra høyre */
+    padding-right: 5px; /* Padding til høyre på 5 piksler */
+}
+
+/* Stil for absoluttposisjonering */
+.absolute {
+    position: absolute;
+}
+
+/* Stil for visning av vinnerinformasjon */
+.vinner {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
